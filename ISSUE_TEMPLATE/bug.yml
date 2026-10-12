@@ -1,0 +1,33 @@
+name: Bug report
+description: Something does not work as expected
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not report security vulnerabilities here; see the repository's Security tab (Report a vulnerability).
+        Do not include credentials, tokens or private data.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: One or two sentences; attach a screenshot or log if it helps.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      render: markdown
+  - type: input
+    id: version
+    attributes:
+      label: Version and environment
+      description: Project version or commit, OS, and runtime versions that matter.
+      placeholder: "1.0.0 / commit SHA, OS, runtime version"
