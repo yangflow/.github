@@ -43,7 +43,9 @@ defaults.
   trust boundary); reporting must then go through `https://github.com/yangflow/<repo>/security/advisories/new`
   (no e-mail).
 - `AGENTS.md`: a self-contained agent guide (what it is, layout, commands, conventions, red lines). It does not
-  reference `yangflow/.github`, milestones, tracking issues, sign-off or pinned SHAs. Red lines always include:
+  reference `yangflow/.github`, milestones, tracking issues, sign-off or pinned SHAs. It has an "Issues and pull
+  requests" section that spells out the issue forms and the pull request template (headings and labels), because
+  agents create issues and pull requests with `gh` and the command line skips the forms and the template. Red lines always include:
   credentials never go into pull requests, issues, logs or chat; releases, signing and anything sent to an
   external service need the maintainer's confirmation; no blind `git add -A` of unknown files.
 - `CLAUDE.md`: one line, `@AGENTS.md`. No `GEMINI.md` and no `.github/copilot-instructions.md`.
@@ -121,7 +123,7 @@ Check each item when creating or auditing a repository.
 - [ ] `LICENSE` is MIT (or Apache-2.0 with `NOTICE`, chosen at creation)
 - [ ] `README.md` has the required sections and badges; `README.zh-CN.md` optional with the language switch
 - [ ] `CONTRIBUTING.md` lists the exact test and lint commands, Conventional Commits and the language rule
-- [ ] `AGENTS.md` is self-contained with the red lines; `CLAUDE.md` is the single line `@AGENTS.md`; no
+- [ ] `AGENTS.md` is self-contained with the red lines and the "Issues and pull requests" section; `CLAUDE.md` is the single line `@AGENTS.md`; no
       `GEMINI.md`, no `.github/copilot-instructions.md`
 - [ ] `CHANGELOG.md` has `## [Unreleased]`; no `CHANGELOG.zh.md`
 - [ ] `.editorconfig` present
