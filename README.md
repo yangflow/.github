@@ -8,12 +8,12 @@ internal hostnames.
 
 | Path | Purpose |
 |---|---|
-| `ISSUE_TEMPLATE/`, `pull_request_template.md` | Issue forms (bug, feature, documentation) and a short pull request template |
+| `.github/ISSUE_TEMPLATE/`, `pull_request_template.md` | Issue forms (bug, feature, documentation) and a short pull request template |
 | `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `SECURITY.md` | Community health files |
 | `profile/README.md` | The account profile page |
 | `STANDARD.md` | The single repository standard and its checklist |
 | `labels.yml`, `scripts/sync-labels.sh` | The common label set and the script that applies it |
-| `.github/` | CODEOWNERS, Dependabot, `pr-title.yml` and this repository's own CI |
+| `.github/` | Issue forms, CODEOWNERS, Dependabot, `pr-title.yml` and this repository's own CI |
 
 ## Community defaults
 
